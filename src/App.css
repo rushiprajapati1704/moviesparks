@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 4rem;
+    font-style: italic;
+    color: rgb(59, 252, 245);
+    text-shadow: -10px 8px 6px red;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 35px;
+}
+input{
+    width: 600px;
+    height: 60px;
+    font-size: 20px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    color: white;
+    border-radius: 40px;
+    outline: none;
+    padding: 20px;
+    box-shadow: 0px -3px 10px rgb(50, 50, 50);
+}
+button{
+    width: 80px;
+    height: 40px;
+    margin-left: -90px;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: rgb(71, 216, 71);
+    border: 0px;
+    /* outline: none; */
+    color: red;
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease 0.7s;
+}
+button:hover{
+    box-shadow: 0px 0px 10px rgb(186, 185, 185);
+    color: rgb(71, 216, 71);
+    background-color: red;
+}
+img{
+    cursor: default;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(92, 90, 90);
+    background-size: cover;
+    transition: all ease 0.5s;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 50px;
+    color: rgb(255, 255, 255);
+
+}
+.movie{
+    margin:1.5rem 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    }
+.year
+{
+    margin: 10px;
+    position: absolute;
+}
+.detail{
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(53, 53, 53);
+    height: 70px;
+    width: 100%;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-top: 2px;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+.movie:hover > .detail{
+    background-color: transparent;
+}
+.type{
+    text-transform:uppercase;
+}
+.empty{
+    margin-top: 50px;
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
+img:hover{
+    transform: translateY(-5px);
+  box-shadow: 0px 0px 30px rgb(0, 208, 255);
+}
+
+/* For Tablet  */
+@media screen and (max-width:1024px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .movie{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    input{
+        width: 500px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    input{
+        width: 400px;
+        height: 60px;
+    }
+}
