@@ -1,0 +1,19 @@
+<div id="header">
+    <h1 id="title">Zomato Eats</h1>
+    <p id="subtitle">Explore, Savor, Repeat</p>
+  </div>
+
+  <div id="menu">
+    <a [routerLink]="'Login'" class="menu-item">Login</a>
+    <a href="#" class="menu-item">Categories</a>
+    <a href="#" class="menu-item">History</a>
+  </div>
+
+  <div id="restaurant-list" >
+    <!-- Restaurant data will be displayed here -->
+    <div class="restaurant-card" *ngFor="let x of categoryList">
+      <img class="restaurant-image" src={{x.photoUrl}} alt="Restaurant Image">
+      <h3 class="restaurant-name">{{x.categoryName}}</h3>
+      <button>ADD</button>
+    </div>
+  </div>

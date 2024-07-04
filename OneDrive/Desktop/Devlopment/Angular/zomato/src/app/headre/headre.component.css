@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #header {
+    background-color: #ff4500;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #title {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  #subtitle {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  #menu {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu-item {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
